@@ -1,4 +1,4 @@
-package uk.gov.hmcts.reform.sscs.functional.evidenceshare;
+package uk.gov.hmcts.reform.sscs.functional;
 
 import static org.junit.Assert.assertEquals;
 import static org.slf4j.LoggerFactory.getLogger;
