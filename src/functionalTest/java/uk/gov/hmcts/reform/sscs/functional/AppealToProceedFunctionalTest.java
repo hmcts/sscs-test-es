@@ -27,6 +27,9 @@ public class AppealToProceedFunctionalTest extends AbstractFunctionalTest {
         simulateCcdCallback(json);
 
         SscsCaseDetails caseDetails = findCaseById(ccdCaseId);
+        log.info("CseDetails {}", caseDetails);
+        log.info("CseDetails.getData {}", caseDetails.getData());
+        log.info("CseDetails.getState {}", caseDetails.getState());
 
         assertEquals("sentToDwp", caseDetails.getData().getHmctsDwpState());
         assertEquals("withDwp", caseDetails.getState());
