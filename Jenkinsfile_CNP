@@ -75,6 +75,7 @@ withPipeline(type, product, component) {
   syncBranchesWithMaster(branchesToSync)
 
   onMaster() {
+    exit 1
     enablePactAs([AppPipelineDsl.PactRoles.CONSUMER])
   }
   onPR() {
